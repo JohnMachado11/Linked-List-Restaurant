@@ -15,7 +15,3 @@ class Node:
 
     def set_next_node(self, new_node):
         self.next = new_node
-
-
-    def get_object_data(self):
-        pass
