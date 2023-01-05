@@ -2,8 +2,8 @@ from food.chicken_menu import chicken_menu
 from food.burger_menu import burger_menu
 import inquirer
 
-
-# -------------------  Important Variables -------------------
+# ------------------------------------------------------------
+#              ---  Important Variables ---
 menu_options = ["Chicken Menu", "Burger Menu", "Sushi Menu"]
 chicken_options = chicken_menu.show_menu()
 burger_options = burger_menu.show_menu()
@@ -11,8 +11,8 @@ burger_options = burger_menu.show_menu()
 # ------------------------------------------------------------
 
 # TODO:
-# Implement Sushi menu
-# Create single function to show user description of food they select from food options
+# 1. Implement Sushi menu
+# 2. Create single function to show user description of food they select from food options
 
 def main():
 
