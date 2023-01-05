@@ -1,8 +1,7 @@
-from linked_list.linked_list import LinkedList
+from data_structure.linked_list import LinkedList
 from food.food import Food
 
 
-# Chicken Menu
 chicken_menu = LinkedList()
 
 chicken_parmesan = Food("Chicken Parmesan", "Breaded chicken with tomato sauce.")

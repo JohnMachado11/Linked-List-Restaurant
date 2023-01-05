@@ -1,4 +1,4 @@
-from linked_list.node import Node
+from data_structure.node import Node
 
 
 class LinkedList:
@@ -33,7 +33,6 @@ class LinkedList:
 
     def show_menu(self):
         current_node = self.get_head_node()
-        print(current_node)
         menu = []
         while current_node:
             menu.append(current_node.get_node_data().get_food_name())

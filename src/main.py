@@ -1,11 +1,12 @@
 from food.chicken_menu import chicken_menu
+from food.burger_menu import burger_menu
 import inquirer
 
 
 # -------------------  Important Variables -------------------
 menu_options = ["Chicken Menu", "Burger Menu", "Sushi Menu"]
 chicken_options = chicken_menu.show_menu()
-# burger_options = burger_menu.show_menu() # Need to implement
+burger_options = burger_menu.show_menu()
 # sushi_options = sushi_menu.show_menu() # Need to implement
 # ------------------------------------------------------------
 
@@ -13,27 +14,38 @@ chicken_options = chicken_menu.show_menu()
 # Create single function to show user all food options from menu they select
 # Create single function to show user description of food they select from food options
 
-def start():
-    print("Starting")
+def main():
 
-    questions = [
+    print("\nWelcome to the Linked-List Restaurant!\n")
+
+    menu_questions = [
     inquirer.List('menu',
                     message=f"What menu would you like to see?",
                     choices=menu_options,
                     ),
     ]
-    response = inquirer.prompt(questions)
+    menu_response = inquirer.prompt(menu_questions)
 
-    # Logic needs to be added here to select correct food option based off user response
+    view_menu_options(menu_response["menu"])
 
-    questions = [
+
+def view_menu_options(menu_response):
+
+    if menu_response == "Chicken Menu":
+        menu_options = chicken_options
+    elif menu_response == "Burger Menu":
+        menu_options = burger_options
+    else:
+        menu_options = "not implemented yet"
+
+    menu_options_questions = [
     inquirer.List('menu_options',
-                    message=f"What from the Chicken Menu would you like to find out more about?",
-                    choices=chicken_options,
+                    message=f"What from the {menu_response} would you like to find out more about?",
+                    choices=menu_options,
                     ),
     ]
-    response = inquirer.prompt(questions)
+    menu_options_response = inquirer.prompt(menu_options_questions)
 
 
 if __name__ == "__main__":
-    start()
+    main()
