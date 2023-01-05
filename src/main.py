@@ -7,11 +7,11 @@ import inquirer
 menu_options = ["Chicken Menu", "Burger Menu", "Sushi Menu"]
 chicken_options = chicken_menu.show_menu()
 burger_options = burger_menu.show_menu()
-# sushi_options = sushi_menu.show_menu() # Need to implement
+# sushi_options = sushi_menu.show_menu()
 # ------------------------------------------------------------
 
-
-# Create single function to show user all food options from menu they select
+# TODO:
+# Implement Sushi menu
 # Create single function to show user description of food they select from food options
 
 def main():
@@ -32,20 +32,22 @@ def main():
 def view_menu_options(menu_response):
 
     if menu_response == "Chicken Menu":
-        menu_options = chicken_options
+        food_options = chicken_options
     elif menu_response == "Burger Menu":
-        menu_options = burger_options
+        food_options = burger_options
     else:
-        menu_options = "not implemented yet"
+        food_options = "not implemented yet"
 
     menu_options_questions = [
-    inquirer.List('menu_options',
+    inquirer.List('food',
                     message=f"What from the {menu_response} would you like to find out more about?",
-                    choices=menu_options,
+                    choices=food_options,
                     ),
     ]
     menu_options_response = inquirer.prompt(menu_options_questions)
 
+    # Testing
+    print(menu_options_response["food"])
 
 if __name__ == "__main__":
     main()
