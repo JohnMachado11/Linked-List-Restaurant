@@ -2,6 +2,7 @@ from food.chicken_menu import chicken_menu
 from food.burger_menu import burger_menu
 import inquirer
 
+
 # ------------------------------------------------------------
 #              ---  Important Variables ---
 menu_options = ["Chicken Menu", "Burger Menu", "Sushi Menu"]
