@@ -35,9 +35,21 @@ class LinkedList:
         current_node = self.get_head_node()
         menu = []
         while current_node:
-            menu.append(current_node.get_node_data().get_food_name())
+            food_name = current_node.get_node_data().get_food_name()
+            menu.append(food_name)
             current_node = current_node.get_next_node()
         return menu
+
+
+    def show_food_descriptions(self):
+        current_node = self.get_head_node()
+        descriptions = {}
+        while current_node:
+            food_name = current_node.get_node_data().get_food_name()
+            food_description = current_node.get_node_data().get_food_description()
+            descriptions[food_name] = food_description
+            current_node = current_node.get_next_node()
+        return descriptions
 
 
     # For Debugging
