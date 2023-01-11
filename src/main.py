@@ -4,15 +4,13 @@ from food.sushi_menu import sushi_menu
 import inquirer
 
 
-# ------------------------------------------------------------
-#              ---  Important Variables ---
+# ----------------------------------------------------------------------------------------------------------------------
+#                                           ---  Important Variables ---
 menu_options = ["Chicken Menu", "Burger Menu", "Sushi Menu"]
 chicken_options = {"food_menu": chicken_menu.show_menu(), "food_descriptions": chicken_menu.show_food_descriptions()}
 burger_options = {"food_menu": burger_menu.show_menu(), "food_descriptions": burger_menu.show_food_descriptions()}
 sushi_options = {"food_menu": sushi_menu.show_menu(), "food_descriptions": sushi_menu.show_food_descriptions()}
-# ------------------------------------------------------------
-
-print(chicken_options)
+# ----------------------------------------------------------------------------------------------------------------------
 
 # TODO:
 # 1. Cleanup view_food_descriptions()
@@ -59,6 +57,7 @@ def view_menu_options(menu_response):
 
 
 def view_food_description(menu_options_response, food_descriptions):
+
     print(menu_options_response)
     print(food_descriptions[menu_options_response])
 
