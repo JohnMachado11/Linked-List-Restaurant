@@ -1,17 +1,17 @@
-from food.burger_menu import burger_menu, burger_menu_emoji
 from food.chicken_menu import chicken_menu, chicken_menu_emoji
+from food.burger_menu import burger_menu, burger_menu_emoji
 from food.sushi_menu import sushi_menu, sushi_menu_emoji
 from utils.restaurant_title import title
 import inquirer
 
 
-# ----------------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------------------------------
 #                                           ---  Important Variables ---
 menu_options = [f"Burger Menu {burger_menu_emoji}", f"Chicken Menu {chicken_menu_emoji}", f"Sushi Menu {sushi_menu_emoji}"]
 chicken_options = {"food_menu": chicken_menu.show_menu(), "food_descriptions": chicken_menu.show_food_descriptions()}
 burger_options = {"food_menu": burger_menu.show_menu(), "food_descriptions": burger_menu.show_food_descriptions()}
 sushi_options = {"food_menu": sushi_menu.show_menu(), "food_descriptions": sushi_menu.show_food_descriptions()}
-# ----------------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------------------------------
 
 
 # TODO: 
