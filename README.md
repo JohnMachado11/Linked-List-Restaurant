@@ -7,8 +7,8 @@ In Computer Science, a `Linked List` is a data structure which stores objects ca
 ---
 
 # Current Menu (more to come)
-`Hamburger`
-`Chicken`
+`Hamburger`,
+`Chicken`,
 `Sushi`
 
 ---
