@@ -4,3 +4,5 @@ python-editor==1.0.4
 readchar==4.0.3
 six==1.16.0
 wcwidth==0.2.5
+pyfiglet==0.8.post1
+emoji==2.2.0

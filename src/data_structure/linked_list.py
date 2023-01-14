@@ -52,6 +52,11 @@ class LinkedList:
         return descriptions
 
 
+    def show_food_emoji(self):
+        current_node = self.get_head_node()
+        return current_node.get_node_data().get_food_emoji()
+
+
     # For Debugging
     def display_list(self):
         current_node = self.get_head_node()
