@@ -1,18 +1,18 @@
 
 class Food:
-    def __init__(self, food_name, food_description, food_emoji):
-        self.food_name = food_name
-        self.food_description = food_description
-        self.food_emoji = food_emoji
+    def __init__(self, name, description, emoji):
+        self.name = name
+        self.description = description
+        self.emoji = emoji
 
 
     def get_food_name(self):
-        return self.food_name
+        return self.name
 
 
     def get_food_description(self):
-        return self.food_description
+        return self.description
 
 
     def get_food_emoji(self):
-        return self.food_emoji
+        return self.emoji
