@@ -64,5 +64,6 @@ def view_food_description(menu_options_response, food_descriptions, food_emoji):
     print(f"{food_emoji} {menu_options_response} {food_emoji} ")
     print(food_descriptions[menu_options_response])
 
+
 if __name__ == "__main__":
     main()
