@@ -4,7 +4,7 @@ Restaurant food options organized and viewable by leveraging a custom built `Lin
 
 In Computer Science, a `Linked List` is a data structure which stores objects called `Nodes`. Each `Node` consists of a data field as well as a "pointer" which references the memory location of the next `Node` it's linked to.
 
-In terms of placement in a computers memory,  `Nodes` are not organized contiguously (like a list / array) but scattered throughout. Which is what makes the pointer property of a `Node` so important. 
+In terms of placement in a computers memory,  `Nodes` are not organized contiguously (like a list / array) but scattered throughout. This is what makes the pointer property of a `Node` so important. 
 
 ---
 
